@@ -50,8 +50,6 @@ printf "\e[0m\n"
 printf "  \e[0m\e[0;32m  ASN           \e[0m\e[1;31m➤\e[0m\e[1;92m $userasn\e[0m\n"
 printf "  \e[0m\e[0;32m  ISP           \e[0m\e[1;31m➤\e[0m\e[1;92m $userisp\e[0m\n"
 printf "  \e[0m\e[0;32m  Version       \e[0m\e[1;31m➤\e[0m\e[1;92m $myversion\e[0m\n"
-sleep 1
-printf "\e[0m\n"
 printf "\e[0m\n"
 exit 1
 
