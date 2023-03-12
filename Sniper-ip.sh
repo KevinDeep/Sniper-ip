@@ -11,7 +11,7 @@ printf "\e[0m\n"
 printf "\e[0m\e[\e[1;37m✞=====<SNIPER-IP 2023\e[\e[1;37m\e[1;37m\e[0m\e[1;37m | Created By Kevin Deep (Archangel White)\e[1;37m\e[1;37m>=====✞\e[0m\n"
 printf "\e[0m\n"
 printf "\e[0m\n"
-read -p $'  \e[1;32m[\e[0m\e[1;31m✔\e[0m\e[1;32m]\e[0m\e[1;32m Enter IP Address \e[0m\e[1;32m: \e[0m\e[0;32m\en' useripaddress
+read -p $'  \e[1;32m[\e[0m\e[1;31m✔\e[0m\e[1;32m]\e[0m\e[1;32m Enter IP Address \e[0m\e[1;32m: \e[0m\e[1;32m\en' useripaddress
 
 ipaddripapico=$(curl -s "https://api.incolumitas.com/?q=$useripaddress" -L)
 ipaddripapicom2=$(curl -s "https://ip-api.io/json/$useripaddress" -L)
@@ -33,23 +33,23 @@ userlanguage=$(echo $myipaddripapicom3 | grep -Po '(?<="languages":)[^},]*' | tr
 usercountrycolling=$(echo $myipaddripapicom3 | grep -Po '(?<="country_calling_code":)[^},]*' | tr -d '[]"' | sed 's/\(<[^>]*>\|<\/>\|{1|}\)//g')
 
 printf "\e[0m\n"
-printf "  \e[0m\e[0;32m  IP Address    \e[0m\e[1;31m➤\e[0m\e[0;32m $userip\e[0m\n"
-printf "  \e[0m\e[0;32m  City          \e[0m\e[1;31m➤\e[0m\e[0;32m $usercity\e[0m\n"
-printf "  \e[0m\e[0;32m  Region        \e[0m\e[1;31m➤\e[0m\e[0;32m $useregion\e[0m\n"
-printf "  \e[0m\e[0;32m  Country       \e[0m\e[1;31m➤\e[0m\e[0;32m  $usercountry\e[0m\n"
-printf "  \e[0m\e[0;32m  Time Zone     \e[0m\e[1;31m➤\e[0m\e[0;32m $usertime\e[0m\n"
-printf "  \e[0m\e[0;32m  Country Code  \e[0m\e[1;31m➤\e[0m\e[0;32m  $usercountrycode\e[0m\n"
+printf "  \e[0m\e[1;92m  IP Address    \e[0m\e[1;31m➤\e[0m\e[1;92m $userip\e[0m\n"
+printf "  \e[0m\e[1;92m  City          \e[0m\e[1;31m➤\e[0m\e[1;92m $usercity\e[0m\n"
+printf "  \e[0m\e[1;92m  Region        \e[0m\e[1;31m➤\e[0m\e[1;92m $useregion\e[0m\n"
+printf "  \e[0m\e[1;92m  Country       \e[0m\e[1;31m➤\e[0m\e[1;92m  $usercountry\e[0m\n"
+printf "  \e[0m\e[1;92m  Time Zone     \e[0m\e[1;31m➤\e[0m\e[1;92m $usertime\e[0m\n"
+printf "  \e[0m\e[1;92m  Country Code  \e[0m\e[1;31m➤\e[0m\e[1;92m  $usercountrycode\e[0m\n"
 printf "\e[0m\n"
-printf "  \e[0m\e[0;32m  Latitude      \e[0m\e[1;31m➤\e[0m\e[0;32m $userlat\e[0m\n"
-printf "  \e[0m\e[0;32m  Longitude     \e[0m\e[1;31m➤\e[0m\e[0;32m $userlon\e[0m\n"
-printf "  \e[0m\e[0;32m  Postal Code   \e[0m\e[1;31m➤\e[0m\e[0;32m $userpostal\e[0m\n"
-printf "  \e[0m\e[0;32m  Local Time    \e[0m\e[1;31m➤\e[0m\e[0;32m $userlocaltime\e[0m\n"
-printf "  \e[0m\e[0;32m  Lenguage      \e[0m\e[1;31m➤\e[0m\e[0;32m $userlanguage\e[0m\n"
-printf "  \e[0m\e[0;32m  Phone Codes   \e[0m\e[1;31m➤\e[0m\e[0;32m $usercountrycolling\e[0m\n"
+printf "  \e[0m\e[1;92m  Latitude      \e[0m\e[1;31m➤\e[0m\e[1;92m $userlat\e[0m\n"
+printf "  \e[0m\e[1;92m  Longitude     \e[0m\e[1;31m➤\e[0m\e[1;92m $userlon\e[0m\n"
+printf "  \e[0m\e[1;92m  Postal Code   \e[0m\e[1;31m➤\e[0m\e[1;92m $userpostal\e[0m\n"
+printf "  \e[0m\e[1;92m  Local Time    \e[0m\e[1;31m➤\e[0m\e[1;92m $userlocaltime\e[0m\n"
+printf "  \e[0m\e[1;92m  Lenguage      \e[0m\e[1;31m➤\e[0m\e[1;92m $userlanguage\e[0m\n"
+printf "  \e[0m\e[1;92m  Phone Codes   \e[0m\e[1;31m➤\e[0m\e[1;92m $usercountrycolling\e[0m\n"
 printf "\e[0m\n"
-printf "  \e[0m\e[0;32m  ASN           \e[0m\e[1;31m➤\e[0m\e[1;92m $userasn\e[0m\n"
-printf "  \e[0m\e[0;32m  ISP           \e[0m\e[1;31m➤\e[0m\e[1;92m $userisp\e[0m\n"
-printf "  \e[0m\e[0;32m  Version       \e[0m\e[1;31m➤\e[0m\e[1;92m $myversion\e[0m\n"
+printf "  \e[0m\e[1;92m  ASN           \e[0m\e[1;31m➤\e[0m\e[1;92m $userasn\e[0m\n"
+printf "  \e[0m\e[1;92m  ISP           \e[0m\e[1;31m➤\e[0m\e[1;92m $userisp\e[0m\n"
+printf "  \e[0m\e[1;92m  Version       \e[0m\e[1;31m➤\e[0m\e[1;92m $myversion\e[0m\n"
 printf "\e[0m\n"
 exit 1
 
